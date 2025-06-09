@@ -39,3 +39,65 @@ body {
   .hidden {
     display: none;
   }
+
+  /* 🖼 Brand Grid Styling */
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    align-items: center;
+  }
+  
+  .brand-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .brand-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .brand-card img {
+    width: 120px; /* adjust as needed */
+    height: 120px;
+    object-fit: contain; /* ensures logo fits nicely */
+    margin-bottom: 0.75rem;
+  }
+  
+  .brand-card span {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Responsive Layout: Stack into 2 columns on tablet/mobile */
+  @media (max-width: 768px) {
+    .brand-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .site-header {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .site-header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .site-header p {
+    font-size: 1rem;
+    color: #666;
+  }  
