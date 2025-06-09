@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dupe Finder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is my first HTML page!</p>
+
+  <!-- 💄 Site Header -->
+  <header class="site-header">
+    <h1>the dupe drop</h1>
+    <p>discover affordable twins to your favorite beauty icons</p>
+  </header>
+
+  <!-- 💅 Brand Selection Grid -->
+  <section class="brand-grid">
+    <div class="brand-card" onclick="loadBrand('glossier')">
+      <img src="images/brand-glossier.png" alt="Glossier" />
+      <span>Glossier</span>
+    </div>
+    <div class="brand-card" onclick="loadBrand('rhode')">
+      <img src="images/brand-rhode.png" alt="Rhode" />
+      <span>Rhode</span>
+    </div>
+    <div class="brand-card" onclick="loadBrand('fenty')">
+      <img src="images/brand-fenty.png" alt="Fenty" />
+      <span>Fenty</span>
+    </div>
+    <!-- Add 3 more brands -->
+  </section>
+
+  <!-- 🧴 Product Gallery (populated dynamically) -->
+  <section id="product-gallery" class="hidden">
+    <button onclick="goBackToBrands()">← Back to brands</button>
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <!-- 🎯 Dupe Modal -->
+  <div id="dupe-panel" class="dupe-panel hidden">
+    <div class="original">
+      <h2>Original</h2>
+      <img id="original-img" src="" alt="Original Product">
+    </div>
+    <div class="dupes">
+      <h2>Dupes</h2>
+      <div id="dupe-imgs"></div>
+    </div>
+    <button onclick="hideDupe()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
