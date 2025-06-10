@@ -84,7 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
     brand.products.forEach(product => {
       const btn = document.createElement("button");
       btn.className = "product-button";
-      btn.textContent = product.name;
+      btn.innerHTML = `
+        <img src="${product.original}" alt="${product.name}" />
+        <span>${product.name}</span>
+        `;
       btn.onclick = () => {
         display.innerHTML = `
           <h2>${brand.name}</h2>
