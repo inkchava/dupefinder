@@ -68,10 +68,18 @@ const data = {
         {
           id: "urban-setting",
           name: "All Nighter Spray",
-          original: "images/urban-setting.png",
+          original: "images/urban-img/urban-spray.png",
           dupes: [
             "images/dupes/morphe-setting.png"
           ]
+        },
+        {
+            id: "urban-eyeshadow",
+            name: "Moondust Eyeshadow",
+            original: "images/urban-img/urban-eyeshadow.png",
+            dupes: [
+              "images/dupes/morphe-setting.png"
+            ]
         }
       ]
     },
