@@ -80,6 +80,22 @@ const data = {
             dupes: [
               "images/dupes/morphe-setting.png"
             ]
+        },
+        {
+            id: "urban-liner",
+            name: "24/7 Glide-On Waterproof Eyeliner Pencil",
+            original: "images/urban-img/urban-liner.png",
+            dupes: [
+              "images/dupes/morphe-setting.png"
+            ]
+        },
+        {
+            id: "urban-liner",
+            name: "Eyeshadow Primer Potion",
+            original: "images/urban-img/urban-primer.png",
+            dupes: [
+              "images/dupes/morphe-setting.png"
+            ]
         }
       ]
     },
