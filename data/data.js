@@ -40,8 +40,72 @@ const data = {
       products: [
         {
           id: "rare-blush",
-          name: "Soft Pinch Blush",
-          original: "images/rare-blush.png",
+          name: "Bouncy Blush",
+          original: "images/rare-imgs/rare-bouncy-blush.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-brow-gel",
+          name: "Brow Gel",
+          original: "images/rare-imgs/rare-brow-gel.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-brow-pencil",
+          name: "Brow Pencil",
+          original: "images/rare-imgs/rare-brow-pencil.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-cream-blush",
+          name: "Stay Vulnerable Melting Blush",
+          original: "images/rare-imgs/rare-cream-blush.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-liquid-blush",
+          name: "Soft Pinch Liquid Blush",
+          original: "images/rare-imgs/rare-liquid-blush.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-liquid-contour",
+          name: "Soft Pinch Liquid Contour",
+          original: "images/rare-imgs/rare-liquid-contour.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-liquid-highlight",
+          name: "Positight Light Liquid Luminizaer",
+          original: "images/rare-imgs/rare-liquid-highlight.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-power-blush",
+          name: "Soft Pinch Luminous Powder Blush",
+          original: "images/rare-imgs/rare-powder-blush.png",
+          dupes: [
+            "images/dupes/e.l.f-blush1.png"
+          ]
+        },
+        {
+          id: "rare-power-highlight",
+          name: "Positive Light Silky Touch Highlighter",
+          original: "images/rare-imgs/rare-powder-highlight.png",
           dupes: [
             "images/dupes/e.l.f-blush1.png"
           ]
