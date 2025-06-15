@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="brand-header">
+    <button class="back-button" onclick="goHome()">← Back</button>
+    <h1 id="brand-title">Brand Name</h1>
+  </header>
 
   <div class="brand-page">
-    <aside class="product-sidebar" id="product-sidebar">
-      <!-- Populated by JS -->
-    </aside>
-
+    <aside class="product-sidebar" id="product-sidebar"></aside>
     <section class="dupe-display" id="dupe-display">
       <p>Select a product to view its dupes 💄</p>
     </section>
@@ -21,4 +22,3 @@
   <script src="data/data.js"></script>
   <script src="script.js"></script>
 </body>
-</html>

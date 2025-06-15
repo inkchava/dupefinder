@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       brandGrid.classList.remove("hidden");
     }
   
+
     // ✅ 7. Make functions available to onclick=""
     window.loadBrand = loadBrand;
     window.hideDupe = hideDupe;
@@ -79,6 +80,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     const brand = data[brandId];
+
+    // Inject the Brand Name into the Header of Brand.html page
+    const brandTitle = document.getElementById("brand-title");
+    if (brandTitle && data[brandId]) {
+      brandTitle.textContent = data[brandId].name;
+    }
   
     // Populate sidebar with products
     brand.products.forEach(product => {
@@ -90,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       btn.onclick = () => {
         display.innerHTML = `
-          <h2>${brand.name}</h2>
           <h3>${product.name}</h3>
           <img src="${product.original}" alt="Original" />
           <div class="dupe-list">
@@ -101,4 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
       sidebar.appendChild(btn);
     });
   });
+
+  function goHome() {
+    window.location.href = "index.html";
+  }
   
